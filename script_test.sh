@@ -28,7 +28,7 @@ setUp() {
 }
 
 testEquality() {
-  output="`./fast_test.sh`"
+  output="`./script`"
 
   assertRunsTask "$output" "db:migrate"
   assertRunsTask "$output" "db:test:load"
