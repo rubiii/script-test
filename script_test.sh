@@ -27,7 +27,7 @@ setUp() {
   writeRakefile
 }
 
-testEquality() {
+testRakeTasksAreRun() {
   output="`./script.sh`"
 
   assertRunsTask "$output" "db:migrate"
